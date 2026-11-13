@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+/.test-dist/
+
+# Runtime & Local DB
+/data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# Environment
+.env
+.env*.local
+
+# Logs & OS
+npm-debug.log*
+.DS_Store
+Thumbs.db
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Stage 5 Backups & Temporary Verification Artifacts
+/backups/
+*.bak
+*.sha256
+/.tmp_s5*/
+/.tmp_cf*/

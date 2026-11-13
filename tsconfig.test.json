@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "outDir": ".test-dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "read-excel-file/node": ["./node_modules/read-excel-file/node/index.d.ts"],
+      "write-excel-file/node": ["./node_modules/write-excel-file/node/index.d.ts"]
+    }
+  },
+  "include": [
+    "src/lib/domain/*.ts",
+    "src/lib/sheets/*.ts",
+    "src/lib/config/env.ts",
+    "src/lib/observability/logger.ts",
+    "src/lib/email/mailer.ts",
+    "src/lib/auth/guards.ts",
+    "src/lib/auth/password.ts",
+    "src/lib/auth/totp.ts",
+    "src/lib/auth/rbac.ts",
+    "src/lib/auth/rateLimit.ts",
+    "src/lib/auth/mfaRecovery.ts",
+    "src/lib/security/*.ts",
+    "src/lib/db/index.ts",
+    "src/lib/db/seed.ts",
+    "src/lib/ai/provider.ts",
+    "src/lib/ai/quota.ts",
+    "src/lib/careerFest/*.ts",
+    "tests/**/*.ts"
+  ]
+}
